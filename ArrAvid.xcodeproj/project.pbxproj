@@ -283,35 +283,30 @@
 			isa = PBXGroup;
 			children = (000000000000000000000001 /* AlarmEngine.swift */, 000000000000000000000002 /* NotificationService.swift */);
 			name = Alarm;
-			path = Alarm;
 			sourceTree = "<group>";
 		};
 		000000000000000000000033 /* PBXGroup */ = {
 			isa = PBXGroup;
 			children = (000000000000000000000003 /* Config.swift */, 000000000000000000000004 /* Geo.swift */, 000000000000000000000005 /* Route.swift */, 000000000000000000000006 /* RouteStore.swift */, 000000000000000000000007 /* TrackLog.swift */, 000000000000000000000008 /* WindowScheduler.swift */);
 			name = Core;
-			path = Core;
 			sourceTree = "<group>";
 		};
 		000000000000000000000034 /* PBXGroup */ = {
 			isa = PBXGroup;
 			children = (000000000000000000000009 /* LocationOnce.swift */, 00000000000000000000000A /* MonitorEngine.swift */);
 			name = Location;
-			path = Location;
 			sourceTree = "<group>";
 		};
 		000000000000000000000035 /* PBXGroup */ = {
 			isa = PBXGroup;
 			children = (00000000000000000000000B /* Diag.swift */, 00000000000000000000000C /* StationSearch.swift */, 00000000000000000000000D /* UpdateChecker.swift */);
 			name = Net;
-			path = Net;
 			sourceTree = "<group>";
 		};
 		000000000000000000000036 /* PBXGroup */ = {
 			isa = PBXGroup;
 			children = (00000000000000000000000E /* AlarmView.swift */, 00000000000000000000000F /* AppState.swift */, 000000000000000000000010 /* ArrAvidApp.swift */, 000000000000000000000011 /* MainView.swift */, 000000000000000000000012 /* MapPickerView.swift */, 000000000000000000000013 /* RouteEditView.swift */, 000000000000000000000014 /* TrackLogView.swift */);
 			name = UI;
-			path = UI;
 			sourceTree = "<group>";
 		};
 		000000000000000000000037 /* PBXGroup */ = {

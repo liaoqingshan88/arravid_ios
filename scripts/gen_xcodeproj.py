@@ -306,7 +306,7 @@ def main():
         add(gid, "PBXGroup", [
             'children = (%s);' % ", ".join(children),
             'name = %s;' % (g.split("/")[-1]),
-            'path = %s;' % g,
+
             'sourceTree = "<group>";',
         ])
 
