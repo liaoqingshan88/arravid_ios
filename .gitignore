@@ -1,0 +1,23 @@
+# macOS
+.DS_Store
+
+# Xcode / DerivedData
+build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+*.xcuserdatad/
+
+# 构建产物
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Swift Package Manager（本工程不用）
+.build/
+.swiftpm/
+
+# 编辑器
+.idea/
+.vscode/
+*.swp

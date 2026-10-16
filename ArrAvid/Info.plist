@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+
+	<!-- ── 基本身份 ────────────────────────────────────────────── -->
+	<key>CFBundleDevelopmentRegion</key>
+	<string>zh_CN</string>
+	<key>CFBundleDisplayName</key>
+	<string>到站提醒</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(MARKETING_VERSION)</string>
+	<key>CFBundleVersion</key>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>CFBundleLocalizations</key>
+	<array>
+		<string>zh-Hans</string>
+		<string>en</string>
+	</array>
+
+	<!-- ── 运行环境 ────────────────────────────────────────────── -->
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>arm64</string>
+		<string>location-services</string>
+		<string>gps</string>
+	</array>
+	<key>UILaunchScreen</key>
+	<dict>
+		<key>UIColorName</key>
+		<string>LaunchBackground</string>
+	</dict>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+
+	<!-- ── 后台模式：
+	         location —— 地理围栏/显著位置变化唤醒 + 监控窗口内的连续定位
+	         audio    —— 到站后循环响铃与语音播报要在锁屏/后台持续，靠它保住进程 -->
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>location</string>
+		<string>audio</string>
+	</array>
+
+	<!-- ── 权限用途说明（缺一个都会被系统直接拒绝弹窗）──────────────── -->
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>用于在地图上定位、以及用当前位置设为提醒站。</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>需要在后台持续使用定位，才能在锁屏或切到其它 App 时判断你是否快到提醒站，并及时响铃提醒。请选择「始终允许」。</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>需要在后台使用定位，才能在锁屏时判断你是否快到提醒站。</string>
+	<key>NSMotionUsageDescription</key>
+	<string>可选的：用于更准确地判断你是否正在乘车移动。</string>
+
+	<!-- ── 网络：
+	         接口与设备上报走 http://www.yanhexing.com:9000（明文），与 Android 版 network_security_config 行为一致 -->
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+
+	<!-- ── 其它 ────────────────────────────────────────────────── -->
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleDefault</string>
+
+</dict>
+</plist>

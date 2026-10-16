@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!--
+	  ── ArrAvid.entitlements（到站提醒 iOS）──────────────────────────────
+	  本工程默认不声明任何需要 Apple 特殊审批的 entitlement，走「自动签名」即可。
+
+	  如果想要「静音/勿扰模式下也强制响铃」（iOS 上唯一能无视静音开关的方式），
+	  需要向 Apple 申请 Critical Alerts 权限，批准后取消下面这行的注释并重新签名：
+	      <key>com.apple.developer.usernotifications.critical-alerts</key>
+	      <true/>
+	  注意：该 entitlement 必须配合一个带 Critical Alerts 能力的 App ID，
+	  普通个人/免费 Apple ID 无法启用。详见 docs/CRITICAL_ALERTS.md。
+	-->
+</dict>
+</plist>

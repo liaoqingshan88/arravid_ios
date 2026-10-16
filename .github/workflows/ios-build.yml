@@ -1,0 +1,71 @@
+# =====================================================================
+# iOS 云构建：在 GitHub Actions 的免费 macOS 机器上把本工程编成 ipa
+#
+# 用法：
+#   1) 把 /home/admin/arravid_ios 的*内容*推到一个 GitHub 仓库（公开仓库免费不限时，
+#      私有仓库免费额度 2000 分钟/月，macOS 按 10 倍扣 ≈ 200 分钟/月，够用）。
+#   2) Actions → 左侧「iOS 云构建」→ Run workflow（或推送 v* 标签自动触发）。
+#   3) 构建完成后下载 Artifact：ArrAvid-unsigned.ipa
+#   4) 在 Windows 上用 Sideloadly（https://sideloadly.io）+ 免费 Apple ID 安装，
+#      免费证书 7 天过期，到期重装一次；或买 $99/年开发者账号用 1 年。
+#
+# 说明：这里产出的是【未签名】ipa。Sideloadly / AltStore 会在本地用它重新签名，
+# 所以不需要在 CI 里配证书和描述文件、也不需要开发者账号。
+# =====================================================================
+name: iOS 云构建
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  build:
+    runs-on: macos-14
+    timeout-minutes: 30
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      - name: 查看环境
+        run: |
+          xcodebuild -version
+          sw_vers
+          xcodebuild -project ArrAvid.xcodeproj -list
+
+      - name: Release 构建（不签名）
+        run: |
+          set -euxo pipefail
+          xcodebuild \
+            -project ArrAvid.xcodeproj \
+            -scheme ArrAvid \
+            -configuration Release \
+            -sdk iphoneos \
+            -destination 'generic/platform=iOS' \
+            -derivedDataPath build \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY="" \
+            DEVELOPMENT_TEAM="" \
+            build
+
+      - name: 打包成 .ipa（Payload 目录结构）
+        run: |
+          set -euxo pipefail
+          APP_PATH="build/Build/Products/Release-iphoneos/ArrAvid.app"
+          test -d "$APP_PATH" || { echo "找不到产物: $APP_PATH"; exit 1; }
+          rm -rf Payload ArrAvid-unsigned.ipa
+          mkdir -p Payload
+          cp -R "$APP_PATH" Payload/
+          zip -qry ArrAvid-unsigned.ipa Payload
+          rm -rf Payload
+          ls -lh ArrAvid-unsigned.ipa
+
+      - name: 上传 ipa
+        uses: actions/upload-artifact@v4
+        with:
+          name: ArrAvid-unsigned-ipa
+          path: ArrAvid-unsigned.ipa
+          if-no-files-found: error
+          retention-days: 14
