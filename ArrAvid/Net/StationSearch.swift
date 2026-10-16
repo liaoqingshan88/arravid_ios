@@ -112,8 +112,8 @@ final class StationSearch {
                 }
             } catch let e as SearchError {
                 error = e.errorDescription
-            } catch {
-                error = "查询失败：\(error.localizedDescription)"
+            } catch let e {
+                error = "查询失败：\(e.localizedDescription)"
             }
             let resultItems = items
             let resultError = error
