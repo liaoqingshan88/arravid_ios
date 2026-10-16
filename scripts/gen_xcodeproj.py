@@ -129,7 +129,8 @@ def project_config(name, buildtype):
             'SWIFT_OPTIMIZATION_LEVEL = "-O";',
             'VALIDATE_PRODUCT = YES;',
         ]
-    return ['name = %s;' % name] + shared + extra
+    body = shared + extra
+    return ['buildSettings = {'] + ['\t' + s for s in body] + ['};', 'name = %s;' % name]
 
 
 def target_config(name, buildtype):
@@ -153,7 +154,7 @@ def target_config(name, buildtype):
         'SWIFT_VERSION = 5.0;',
         'TARGETED_DEVICE_FAMILY = 1;',
     ]
-    return ['name = %s;' % name] + base
+    return ['buildSettings = {'] + ['\t' + s for s in base] + ['};', 'name = %s;' % name]
 
 
 SCHEME_TEMPLATE = '''<?xml version="1.0" encoding="UTF-8"?>
