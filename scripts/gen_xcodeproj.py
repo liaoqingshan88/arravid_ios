@@ -424,12 +424,18 @@ def main():
 
     # ── 渲染到文件 ──
     lines = ['// !$*UTF8*$!', '{']
+    lines.append('\tarchiveVersion = 1;')
+    lines.append('\tclasses = {')
+    lines.append('\t};')
+    lines.append('\tobjectVersion = 56;')
+    lines.append('\tobjects = {')
     for oid, isa, body in objects:
         lines.append('\t\t%s /* %s */ = {' % (oid, isa))
         lines.append('\t\t\tisa = %s;' % isa)
         for b in body:
             lines.append('\t\t\t' + b)
         lines.append('\t\t};')
+    lines.append('\t};')
     lines.append('\trootObject = %s /* Project object */;' % project)
     lines.append('}')
     lines.append('')

@@ -1,143 +1,148 @@
 // !$*UTF8*$!
 {
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
 		000000000000000000000001 /* PBXFileReference */ = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
-			name = AlarmView.swift;
-			path = UI/AlarmView.swift;
-			sourceTree = "<group>";
-		};
-		000000000000000000000002 /* PBXFileReference */ = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
-			name = AppState.swift;
-			path = UI/AppState.swift;
-			sourceTree = "<group>";
-		};
-		000000000000000000000003 /* PBXFileReference */ = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
-			name = ArrAvidApp.swift;
-			path = UI/ArrAvidApp.swift;
-			sourceTree = "<group>";
-		};
-		000000000000000000000004 /* PBXFileReference */ = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
-			name = MainView.swift;
-			path = UI/MainView.swift;
-			sourceTree = "<group>";
-		};
-		000000000000000000000005 /* PBXFileReference */ = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
-			name = MapPickerView.swift;
-			path = UI/MapPickerView.swift;
-			sourceTree = "<group>";
-		};
-		000000000000000000000006 /* PBXFileReference */ = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
-			name = RouteEditView.swift;
-			path = UI/RouteEditView.swift;
-			sourceTree = "<group>";
-		};
-		000000000000000000000007 /* PBXFileReference */ = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
-			name = TrackLogView.swift;
-			path = UI/TrackLogView.swift;
-			sourceTree = "<group>";
-		};
-		000000000000000000000008 /* PBXFileReference */ = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
-			name = LocationOnce.swift;
-			path = Location/LocationOnce.swift;
-			sourceTree = "<group>";
-		};
-		000000000000000000000009 /* PBXFileReference */ = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
-			name = MonitorEngine.swift;
-			path = Location/MonitorEngine.swift;
-			sourceTree = "<group>";
-		};
-		00000000000000000000000A /* PBXFileReference */ = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
-			name = Diag.swift;
-			path = Net/Diag.swift;
-			sourceTree = "<group>";
-		};
-		00000000000000000000000B /* PBXFileReference */ = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
-			name = StationSearch.swift;
-			path = Net/StationSearch.swift;
-			sourceTree = "<group>";
-		};
-		00000000000000000000000C /* PBXFileReference */ = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
-			name = UpdateChecker.swift;
-			path = Net/UpdateChecker.swift;
-			sourceTree = "<group>";
-		};
-		00000000000000000000000D /* PBXFileReference */ = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
-			name = Config.swift;
-			path = Core/Config.swift;
-			sourceTree = "<group>";
-		};
-		00000000000000000000000E /* PBXFileReference */ = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
-			name = Geo.swift;
-			path = Core/Geo.swift;
-			sourceTree = "<group>";
-		};
-		00000000000000000000000F /* PBXFileReference */ = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
-			name = Route.swift;
-			path = Core/Route.swift;
-			sourceTree = "<group>";
-		};
-		000000000000000000000010 /* PBXFileReference */ = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
-			name = RouteStore.swift;
-			path = Core/RouteStore.swift;
-			sourceTree = "<group>";
-		};
-		000000000000000000000011 /* PBXFileReference */ = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
-			name = TrackLog.swift;
-			path = Core/TrackLog.swift;
-			sourceTree = "<group>";
-		};
-		000000000000000000000012 /* PBXFileReference */ = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
-			name = WindowScheduler.swift;
-			path = Core/WindowScheduler.swift;
-			sourceTree = "<group>";
-		};
-		000000000000000000000013 /* PBXFileReference */ = {
 			isa = PBXFileReference;
 			lastKnownFileType = sourcecode.swift;
 			name = AlarmEngine.swift;
 			path = Alarm/AlarmEngine.swift;
 			sourceTree = "<group>";
 		};
-		000000000000000000000014 /* PBXFileReference */ = {
+		000000000000000000000002 /* PBXFileReference */ = {
 			isa = PBXFileReference;
 			lastKnownFileType = sourcecode.swift;
 			name = NotificationService.swift;
 			path = Alarm/NotificationService.swift;
+			sourceTree = "<group>";
+		};
+		000000000000000000000003 /* PBXFileReference */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			name = Config.swift;
+			path = Core/Config.swift;
+			sourceTree = "<group>";
+		};
+		000000000000000000000004 /* PBXFileReference */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			name = Geo.swift;
+			path = Core/Geo.swift;
+			sourceTree = "<group>";
+		};
+		000000000000000000000005 /* PBXFileReference */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			name = Route.swift;
+			path = Core/Route.swift;
+			sourceTree = "<group>";
+		};
+		000000000000000000000006 /* PBXFileReference */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			name = RouteStore.swift;
+			path = Core/RouteStore.swift;
+			sourceTree = "<group>";
+		};
+		000000000000000000000007 /* PBXFileReference */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			name = TrackLog.swift;
+			path = Core/TrackLog.swift;
+			sourceTree = "<group>";
+		};
+		000000000000000000000008 /* PBXFileReference */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			name = WindowScheduler.swift;
+			path = Core/WindowScheduler.swift;
+			sourceTree = "<group>";
+		};
+		000000000000000000000009 /* PBXFileReference */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			name = LocationOnce.swift;
+			path = Location/LocationOnce.swift;
+			sourceTree = "<group>";
+		};
+		00000000000000000000000A /* PBXFileReference */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			name = MonitorEngine.swift;
+			path = Location/MonitorEngine.swift;
+			sourceTree = "<group>";
+		};
+		00000000000000000000000B /* PBXFileReference */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			name = Diag.swift;
+			path = Net/Diag.swift;
+			sourceTree = "<group>";
+		};
+		00000000000000000000000C /* PBXFileReference */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			name = StationSearch.swift;
+			path = Net/StationSearch.swift;
+			sourceTree = "<group>";
+		};
+		00000000000000000000000D /* PBXFileReference */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			name = UpdateChecker.swift;
+			path = Net/UpdateChecker.swift;
+			sourceTree = "<group>";
+		};
+		00000000000000000000000E /* PBXFileReference */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			name = AlarmView.swift;
+			path = UI/AlarmView.swift;
+			sourceTree = "<group>";
+		};
+		00000000000000000000000F /* PBXFileReference */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			name = AppState.swift;
+			path = UI/AppState.swift;
+			sourceTree = "<group>";
+		};
+		000000000000000000000010 /* PBXFileReference */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			name = ArrAvidApp.swift;
+			path = UI/ArrAvidApp.swift;
+			sourceTree = "<group>";
+		};
+		000000000000000000000011 /* PBXFileReference */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			name = MainView.swift;
+			path = UI/MainView.swift;
+			sourceTree = "<group>";
+		};
+		000000000000000000000012 /* PBXFileReference */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			name = MapPickerView.swift;
+			path = UI/MapPickerView.swift;
+			sourceTree = "<group>";
+		};
+		000000000000000000000013 /* PBXFileReference */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			name = RouteEditView.swift;
+			path = UI/RouteEditView.swift;
+			sourceTree = "<group>";
+		};
+		000000000000000000000014 /* PBXFileReference */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			name = TrackLogView.swift;
+			path = UI/TrackLogView.swift;
 			sourceTree = "<group>";
 		};
 		000000000000000000000015 /* PBXFileReference */ = {
@@ -276,35 +281,35 @@
 		};
 		000000000000000000000032 /* PBXGroup */ = {
 			isa = PBXGroup;
-			children = (000000000000000000000013 /* AlarmEngine.swift */, 000000000000000000000014 /* NotificationService.swift */);
+			children = (000000000000000000000001 /* AlarmEngine.swift */, 000000000000000000000002 /* NotificationService.swift */);
 			name = Alarm;
 			path = Alarm;
 			sourceTree = "<group>";
 		};
 		000000000000000000000033 /* PBXGroup */ = {
 			isa = PBXGroup;
-			children = (00000000000000000000000D /* Config.swift */, 00000000000000000000000E /* Geo.swift */, 00000000000000000000000F /* Route.swift */, 000000000000000000000010 /* RouteStore.swift */, 000000000000000000000011 /* TrackLog.swift */, 000000000000000000000012 /* WindowScheduler.swift */);
+			children = (000000000000000000000003 /* Config.swift */, 000000000000000000000004 /* Geo.swift */, 000000000000000000000005 /* Route.swift */, 000000000000000000000006 /* RouteStore.swift */, 000000000000000000000007 /* TrackLog.swift */, 000000000000000000000008 /* WindowScheduler.swift */);
 			name = Core;
 			path = Core;
 			sourceTree = "<group>";
 		};
 		000000000000000000000034 /* PBXGroup */ = {
 			isa = PBXGroup;
-			children = (000000000000000000000008 /* LocationOnce.swift */, 000000000000000000000009 /* MonitorEngine.swift */);
+			children = (000000000000000000000009 /* LocationOnce.swift */, 00000000000000000000000A /* MonitorEngine.swift */);
 			name = Location;
 			path = Location;
 			sourceTree = "<group>";
 		};
 		000000000000000000000035 /* PBXGroup */ = {
 			isa = PBXGroup;
-			children = (00000000000000000000000A /* Diag.swift */, 00000000000000000000000B /* StationSearch.swift */, 00000000000000000000000C /* UpdateChecker.swift */);
+			children = (00000000000000000000000B /* Diag.swift */, 00000000000000000000000C /* StationSearch.swift */, 00000000000000000000000D /* UpdateChecker.swift */);
 			name = Net;
 			path = Net;
 			sourceTree = "<group>";
 		};
 		000000000000000000000036 /* PBXGroup */ = {
 			isa = PBXGroup;
-			children = (000000000000000000000001 /* AlarmView.swift */, 000000000000000000000002 /* AppState.swift */, 000000000000000000000003 /* ArrAvidApp.swift */, 000000000000000000000004 /* MainView.swift */, 000000000000000000000005 /* MapPickerView.swift */, 000000000000000000000006 /* RouteEditView.swift */, 000000000000000000000007 /* TrackLogView.swift */);
+			children = (00000000000000000000000E /* AlarmView.swift */, 00000000000000000000000F /* AppState.swift */, 000000000000000000000010 /* ArrAvidApp.swift */, 000000000000000000000011 /* MainView.swift */, 000000000000000000000012 /* MapPickerView.swift */, 000000000000000000000013 /* RouteEditView.swift */, 000000000000000000000014 /* TrackLogView.swift */);
 			name = UI;
 			path = UI;
 			sourceTree = "<group>";
@@ -329,7 +334,7 @@
 		00000000000000000000003A /* PBXSourcesBuildPhase */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
-			files = (00000000000000000000001B /* AlarmView.swift */, 00000000000000000000001C /* AppState.swift */, 00000000000000000000001D /* ArrAvidApp.swift */, 00000000000000000000001E /* MainView.swift */, 00000000000000000000001F /* MapPickerView.swift */, 000000000000000000000020 /* RouteEditView.swift */, 000000000000000000000021 /* TrackLogView.swift */, 000000000000000000000022 /* LocationOnce.swift */, 000000000000000000000023 /* MonitorEngine.swift */, 000000000000000000000024 /* Diag.swift */, 000000000000000000000025 /* StationSearch.swift */, 000000000000000000000026 /* UpdateChecker.swift */, 000000000000000000000027 /* Config.swift */, 000000000000000000000028 /* Geo.swift */, 000000000000000000000029 /* Route.swift */, 00000000000000000000002A /* RouteStore.swift */, 00000000000000000000002B /* TrackLog.swift */, 00000000000000000000002C /* WindowScheduler.swift */, 00000000000000000000002D /* AlarmEngine.swift */, 00000000000000000000002E /* NotificationService.swift */);
+			files = (00000000000000000000001B /* AlarmEngine.swift */, 00000000000000000000001C /* NotificationService.swift */, 00000000000000000000001D /* Config.swift */, 00000000000000000000001E /* Geo.swift */, 00000000000000000000001F /* Route.swift */, 000000000000000000000020 /* RouteStore.swift */, 000000000000000000000021 /* TrackLog.swift */, 000000000000000000000022 /* WindowScheduler.swift */, 000000000000000000000023 /* LocationOnce.swift */, 000000000000000000000024 /* MonitorEngine.swift */, 000000000000000000000025 /* Diag.swift */, 000000000000000000000026 /* StationSearch.swift */, 000000000000000000000027 /* UpdateChecker.swift */, 000000000000000000000028 /* AlarmView.swift */, 000000000000000000000029 /* AppState.swift */, 00000000000000000000002A /* ArrAvidApp.swift */, 00000000000000000000002B /* MainView.swift */, 00000000000000000000002C /* MapPickerView.swift */, 00000000000000000000002D /* RouteEditView.swift */, 00000000000000000000002E /* TrackLogView.swift */);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		00000000000000000000003B /* PBXResourcesBuildPhase */ = {
@@ -504,5 +509,6 @@
 			SWIFT_VERSION = 5.0;
 			TARGETED_DEVICE_FAMILY = 1;
 		};
+	};
 	rootObject = 000000000000000000000044 /* Project object */;
 }
